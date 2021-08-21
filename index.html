@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <title>travellingislife</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="whiteclouds.mp4" muted loop autoplay ></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Keep calm and travel on</h2>
+            <h3>Take memories, leave footprints</h3>
+            <p>Life is short and the world is wide.Better get started.Take memories, leave footprints</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Velit repellendus natus maxime, officia fugiat doloremque at ad similique omnis numquam!</p>
+            <a href="#">Explore</a>
+
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="facebook-48.png" alt="fb"></a></li>
+            <li><a href="#"><img src="instagram-50.png" alt="insta"></a></li>
+            <li><a href="#"><img src="twitter-48.png" alt="tw"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">stories</a></li>
+            <li><a href="#">Travel Resources</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () =>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
